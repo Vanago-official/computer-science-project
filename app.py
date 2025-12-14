@@ -2,6 +2,23 @@ import streamlit as st
 
 st.set_page_config(page_title="Bank Money Transfers", layout="wide")
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    // background-image: linear-gradient(to top, #021526, #180161, #4F1787);
+    // background-attachment: fixed;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://i.postimg.cc/y8WqVWZS/5330458944880709686.jpg)](https://postimg.cc/4YC2PfwJ");
+    // background-image: url("https://i.postimg.cc/y8WqVWZS/5330458944880709686.jpg)](https://postimg.cc/4YC2PfwJ");
+    background-size: cover;
+    background-size: 100% 100%;
+}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.markdown("""
     <style>
         .stTabs [data-baseweb="tab-list"] {
@@ -47,7 +64,7 @@ def modal_window(contain):
 
 col1, col2, col3 = st.columns([0.15, 0.70, 0.15])
 with col1:
-    st.image("images/Pig.png", width=125)
+    st.image("https://i.postimg.cc/3RQSswhS/Pig.png", width=125)
 
 with col2:
     st.title("Bank Money Transfers")
@@ -72,19 +89,19 @@ with col3:
         ac1, ac2, ac3, ac4 = st.columns(4)
 
         with ac1:
-            st.image("images/Lisa.jpg", use_container_width=True)
+            st.image("https://i.postimg.cc/50W7htJs/Lisa.jpg", use_container_width=True)
             st.subheader("Ушкевич Єлизавета")
 
         with ac2:
-            st.image("images/Sqb.jpg", use_container_width=True)
+            st.image("https://i.postimg.cc/Kzhq6Yb9/Sqb.jpg", use_container_width=True)
             st.subheader("Скуб Анастасія")
 
         with ac3:
-            st.image("images/Yulian.png", use_container_width=True)
+            st.image("https://i.postimg.cc/hjRykGnZ/Yulian.jpg", use_container_width=True)
             st.subheader("Главаті Юліан")
 
         with ac4:
-            st.image("images/Ivan.JPEG", use_container_width=True)
+            st.image("https://i.postimg.cc/SsbTBK4M/Ivan.jpg", use_container_width=True)
             st.subheader("Новоселов Іван")
 
 
@@ -133,7 +150,6 @@ with col3:
         - https://wiki.wayforpay.com/
         - https://www.liqpay.ua/doc/api
         - https://docs.portmone.com.ua/docs/uk/PaymentGatewayUa
-        - https://cdn-icons-png.flaticon.com/512/6475/6475938.png
         """)
 
 tab1, tab2, tab3 = st.tabs(["Види переказів", "Історія переказів", "Сьогодення"])
