@@ -47,10 +47,8 @@ def modal_window(contain):
 
 col1, col2, col3 = st.columns([0.15, 0.70, 0.15])
 with col1:
-    st.image(
-        "https://cdn-icons-png.flaticon.com/512/6475/6475938.png",
-        width=125,
-    )
+    st.image("images/Pig.png", width=125)
+
 with col2:
     st.title("Bank Money Transfers")
     st.caption("Зроблено командою Counter Strike з любов'ю <3")
