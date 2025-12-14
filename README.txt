@@ -1,7 +1,9 @@
 ЗВІТ                                                    
 до проєктної роботи 
 з дисципліни «Computer Science Foundations» 
-на тему: «Банківські операції. Транзакції» 
+на тему: «Банківські операції. Транзакції»
+
+Назва команди: Counter Strike
 
 Github: https://github.com/Vanago-official/computer-science-project
 
